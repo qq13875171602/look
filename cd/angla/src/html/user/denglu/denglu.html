@@ -1,0 +1,26 @@
+<div class="container-fluid" ng-controller="conpl">
+  <div class="row">
+    <div class="col-cs-4"></div>
+    <div class="col-cs-4">
+      <form name="form">
+      <div class="form-group">
+        <div class="input-group">
+          <label class="input-group-addon">账号</label>
+          <input type="text" name="text" required="required" ng-model="data.user.Uname" >
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <label class="input-group-addon">密码</label>
+          <input type="password" name="pad" required="required" ng-model="data.user.Password">
+        </div>
+      </div>
+      <div class="form-group">
+         <span class="btn btn-primary" ng-click="denglu()">登录</span>
+         <span class="btn btn-info" ng-click="plo()">重置</span>
+      </div>
+      </form>
+    </div>
+    <div class="col-cs-4"></div>
+  </div>
+</div>
