@@ -1,0 +1,18 @@
+﻿.body {
+    margin:0px;
+    padding:0px;
+}
+.youceng {
+    width:100%;
+    height:350px;
+}
+.youceng1 {
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border-bottom:2px solid red;
+}
+.youceng2 {
+    width:100%;
+    height:280px;
+}

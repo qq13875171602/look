@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "TypeAdd";
+    Layout = "~/_LayoutPage.cshtml";
+}
+
+@section style{
+    <link href="~/Content/app/houtai/jiemian.css" rel="stylesheet" />
+    <link href="~/Content/app/houtai/cemian.css" rel="stylesheet" />
+    <link href="~/Content/app/houtai/TypeAdd.css" rel="stylesheet" />
+    <link href="~/Content/app/houtai/footer.css" rel="stylesheet" />
+    }
+@section js{
+    <script src="~/Static/app/Type/Type.js"></script>
+    }
+
+@RenderPage("~/Views/comm/View.cshtml")
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2">
+            @RenderPage("~/Views/comm/View2.cshtml")
+        </div>
+        <div class="col-xs-10 body">
+            <div class="head">
+                <!-- 标题 -->
+                <div class="biaoti">
+                    <div class="biaotileft">
+                        <img src="~/img/标题.png" />
+                    </div>
+                    <div class="biaotiright">
+                        <h5 class="color">图书信息管理</h5>
+                    </div>
+                </div>
+                <!-- 添加分类 -->
+                <div class="biaoti2">
+                    <div class="biaoti2left">
+                        <span>书籍分类:&nbsp;&nbsp;&nbsp;<input type="text" style="width:120px;" id="Type" /></span>
+                    </div>
+                    <div class="biaoti2right">
+                        <div class="kuang btn" id="tianjia">添加</div>
+                    </div>
+                </div>
+                <!-- 分类呈现-->
+                <div class="tbody">
+                    <div class="tbody2">
+                        <table class="table table-bordered">
+                           <tr>
+                             <th>编号</th>
+                             <th>分类</th>
+                             <th>时间</th>
+                           </tr>
+                           <tbody id="tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid body">
+        @RenderPage("~/Views/comm/View3.cshtml")
+</div>

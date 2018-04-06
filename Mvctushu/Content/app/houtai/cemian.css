@@ -1,0 +1,60 @@
+﻿.body {
+    margin:0px;
+    padding:0px;
+}
+.cengop {
+    width:100%;
+    background-color:#fbf5f5;
+    height:489px;
+}
+.ceng2 {
+    width:80%;
+    height:30px;
+    background:linear-gradient(#07445b,#1884ac,#90d5ef);
+    margin-left:10%;
+    margin-top:10px;
+    line-height:30px;
+}
+.ceng2-left {
+    width:75%;
+    float:left;
+    text-align:center;
+    color:#fcfcfc;
+}
+.ceng3-left {
+    width:25%;
+    float:left;
+    text-align:center;
+}
+.ceng4 {
+    width:80%;
+    height:110px;
+    margin-left:10%;
+}
+.ceng5:hover {
+    background-color:#b6ff00;
+    cursor:pointer;
+}
+.ceng5 {
+    width:100%;
+    height:30px;
+    background-color:#1a799c;
+    line-height:30px;
+    float:left;
+    margin-top:10px;
+}
+.ceng6 {
+    width:40%;
+    height:30px;
+    float:left;
+    text-align:center;
+}
+.ceng7 {
+    width:60%;
+    height:30px;
+    float:left;
+    color:#fcfcfc;
+}
+.cursor {
+     cursor:pointer;
+}

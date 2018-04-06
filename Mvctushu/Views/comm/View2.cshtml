@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "View2";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#right").click(function () {
+            $("#right").hide();
+            $("#xia").show();
+            $("#ceng4").show();
+        });
+        $("#xia").click(function () {
+            $("#xia").hide();
+            $("#right").show();
+            $("#ceng4").hide();
+        });
+    });
+</script>
+
+<div class="container-fluid body">
+    <div class="row">
+        <div class="col-xs-2 cengop">
+            <div class="ceng2">
+                <div class="ceng2-left">
+                    <span>分类管理</span>
+                </div>
+                <div class="ceng3-left">
+                    <span id="right" class="cursor"><i class="glyphicon glyphicon-triangle-right"></i></span>
+                    <span id="xia" class="cursor"  style="display:none;"><i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                </div>
+            </div>
+            <div id="ceng4" class="ceng4" style="display:none">
+                <div class="ceng5" onclick="location='/houtai/TypeAdd'">
+                   <div class="ceng6"><i class="glyphicon glyphicon-folder-close"></i></div>
+                   <div class="ceng7">分类添加</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10"></div>
+    </div>
+</div>

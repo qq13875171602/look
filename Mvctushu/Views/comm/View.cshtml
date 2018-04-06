@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "View";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $.post("/user/mook", {}, function (data) {
+            $("#name").html("欢迎:"+data.list.uname + "(" + data.list.nick + ")");
+
+            $("#tuichu").click(function () {
+                $.post("/user/Romve", {}, function (data) {
+                    if (data.Souse)
+                    {
+                        location.href = "/adminUser/Index";
+                    }
+                },"json");
+            });
+
+
+        },"json");
+    });
+</script>
+
+<div class="container-fluid body">
+    <div class="haeder">
+        <div class="haeder-left">
+            <h4 class="left color">图书管理系统后台</h4>
+        </div>
+        <div class="header-right">
+            <span class="header-right-left" id="name"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="glyphicon glyphicon-off"></i><a href="javascript:void(0)">&nbsp;<span id="tuichu" class="color coco">退出</span></a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid body width colorz">
+
+</div>

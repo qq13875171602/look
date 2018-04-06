@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "图书网站";
+    Layout = "~/_LayoutPage.cshtml";
+}
+
+@section style{
+    <link href="~/Content/app/Userstyle.css" rel="stylesheet" />
+}
+@section js{
+    <script src="~/Static/app/Userjs/user.js"></script>
+    }
+
+<div class="container-fluid body">
+    <div class="ceng">
+        <span class="margin-left">欢迎来到我的网站</span>
+    </div>
+    <div class="ceng1">
+        <img src="~/img/1a440a8ccd43ba26c6e70b707a6f704a.jpg" class="ceng1" />
+    </div>
+    <div class="row float-left body">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="text-center">用户登录</div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                账号
+                            </div>
+                            <input type="text" class="form-control" placeholder="请输入用户名" id="name"  />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                密码
+                            </div>
+                            <input type="password" class="form-control" placeholder="请输入密码" id="password"  />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <span class="btn btn-primary" id="ok">登录</span>
+                    <span class="btn btn-info" id="Iok">登陆</span>
+                    <span class="btn btn-primary" id="Request">重置</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4"></div>
+    </div>
+</div>

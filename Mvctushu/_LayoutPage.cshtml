@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>图书网站</title>
+    <link href="~/Content/lib/css/bootstrap.min.css" rel="stylesheet" />
+    @RenderSection("style", false)
+
+    <script src="~/Static/lib/jquery.min.js"></script>
+    <script src="~/Static/lib/bootstrap.min.js"></script>
+    <script src="~/Static/app/dialog.js"></script>
+    @RenderSection("js", false)
+</head>
+<body>
+    <div id="dialog" class="modal" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1" style="z-index:1899">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <span id="title"></span>
+                </div>
+                <div class="modal-body">
+                    <span id="info"></span>
+                </div>
+                <div class="modal-footer">
+                    <span class="btn btn-primary" id="ok">确认</span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="modaldialog" class="modal" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1" style="z-index:1890">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <span id="modaltitle"></span>
+                </div>
+                <div class="modal-body">
+                    <span id="modalinfo"></span>
+                </div>
+                <div class="modal-footer">
+                    <span class="btn btn-primary" id="Imok">确认</span>
+                    <span class="btn btn-info" id="Requeset">取消</span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="tishidialog" class="modal" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1" style="z-index:1991">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="tishititle"></span>
+                </div>
+                <div class="modal-body">
+                    <span id="tishiinfo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="diaoyongdialog" class="modal" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1" style="z-index:1992">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="diaoyongtitle"></span>
+                </div>
+                <div class="modal-body">
+                    <span id="diaoyonginfo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

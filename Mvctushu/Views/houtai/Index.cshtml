@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/_LayoutPage.cshtml";
+}
+
+@section style{
+    <link href="~/Content/app/houtai/jiemian.css" rel="stylesheet" />
+    <link href="~/Content/app/houtai/cemian.css" rel="stylesheet" />
+    <link href="~/Content/app/houtai/youbian.css" rel="stylesheet" />
+    <link href="~/Content/app/houtai/footer.css" rel="stylesheet" />
+    }
+@RenderPage("/Views/comm/View.cshtml")
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2 ">
+            @RenderPage("~/Views/comm/View2.cshtml")
+        </div>
+        <div class="col-xs-10 body">
+            <div class="youceng">
+                <div class="youceng1">欢迎来到xx图书系统</div>
+                <div class="youceng2 ">
+                    <img src="~/img/8622145a4e2a13db1fd3d2e5bdf18f5f.jpg" style="width:100%;height:450px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid body">
+             @RenderPage("~/Views/comm/View3.cshtml")
+        </div>

@@ -1,0 +1,76 @@
+﻿.body {
+    padding:0px;
+    margin:0px;
+}
+.head {
+    width:100%;
+    height:490px;
+    border-radius:3px 3px;
+    background-color:#d5ebff;
+    float:left;
+}
+.biaoti {
+    width:95%;
+    height:30px;
+    background-color:#4ea4ef;
+    margin-left:2.5%;
+    border-radius:2px 2px;
+    margin-top:15px;
+    float:left;
+}
+.biaotileft {
+    width:5%;
+    text-align:center;
+    height:30px;
+    float:left;
+    line-height:30px;
+}
+.biaotiright {
+    width:90%;
+    height:30px;
+    float:left;
+    line-height:30px;
+}
+.biaoti2 {
+    width:95%;
+    height:30px;
+    margin-left:2.5%;
+    float:left;
+    margin-top:5px;
+}
+.biaoti2left {
+    width:19%;
+    height:40px;
+    float:left;
+}
+.biaoti2right {
+    width:61%;
+    height:40px;
+    float:left;
+}
+.kuang {
+    width:50px;
+    height:25px;
+    background-color:#ff7500;
+    color:#fff;
+    line-height:13px;
+    text-align:center;
+    border-radius:2px 2px;
+}
+.tbody {
+    width:98%;
+    height:410px;
+    background-color:#fffffd;
+    border-radius:4px 4px;
+    float:left;
+    margin-left:1%;
+}
+.tbody2 {
+    width:95%;
+    height:360px;
+    border-radius:4px 4px;
+    float:left;
+    margin-left:1.5%;
+    margin-top:15px;
+}
+
